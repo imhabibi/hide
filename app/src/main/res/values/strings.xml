@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Hidden Applications</string>
+    <string name="preference_file_key">com.yadishot.hiddenapplications.SecretPreferences</string>
+    <string name="preference_file_securityCode">com.yadishot.hiddenapplications.numberCallingSecurity</string>
+</resources>

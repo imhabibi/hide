@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Packages_activity"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#fff"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:text="Choose a package to get started"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textColor="#fff"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:text="Scroll for select"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <!--        Free card-->
+            <androidx.cardview.widget.CardView
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="200dp"
+                android:layout_height="330dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_marginTop="2dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="200dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/free"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Free for test 1 Day"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/optionsTxtViewFree"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$0 Free"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"/>
+                    <Button
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/btn_customer"
+                        android:text="Select Pack"
+                        android:textColor="#fff"
+                        android:layout_marginTop="70dp"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/freePack"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--        7 Day Card-->
+            <androidx.cardview.widget.CardView
+                android:layout_marginRight="5dp"
+                android:layout_width="200dp"
+                android:layout_height="330dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="200dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/cart"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7 Day"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/optionsTxtViewSeven"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$3,000 T"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"/>
+                    <Button
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/btn_customer"
+                        android:text="Select Pack"
+                        android:textColor="#fff"
+                        android:layout_marginTop="70dp"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/sevenPack"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--        1 moth pack-->
+            <androidx.cardview.widget.CardView
+                android:layout_marginRight="5dp"
+                android:layout_width="200dp"
+                android:layout_height="330dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="200dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/coins"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1 Month"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/optionsTxtViewOneMoth"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$6,000 T"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"/>
+                    <Button
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/btn_customer"
+                        android:text="Select Pack"
+                        android:textColor="#fff"
+                        android:layout_marginTop="70dp"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/oneMothPack"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--        3 moth pack-->
+            <androidx.cardview.widget.CardView
+                android:layout_marginRight="5dp"
+                android:layout_width="200dp"
+                android:layout_height="330dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="200dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/coins1"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3 Month"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/optionsTxtViewTreeMoth"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$15,000 T"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"/>
+                    <Button
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/btn_customer"
+                        android:text="Select Pack"
+                        android:textColor="#fff"
+                        android:layout_marginTop="70dp"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/treeMothPack"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <!--        6 moth pack-->
+            <androidx.cardview.widget.CardView
+                android:layout_marginRight="5dp"
+                android:layout_width="200dp"
+                android:layout_height="330dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="200dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/coin"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6 Month"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/optionsTxtViewSixMoth"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$20,000 T"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"/>
+                    <Button
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/btn_customer"
+                        android:text="Select Pack"
+                        android:textColor="#fff"
+                        android:layout_marginTop="70dp"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/sixMothPack"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</LinearLayout>
